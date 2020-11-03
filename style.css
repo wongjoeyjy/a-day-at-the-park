@@ -1,0 +1,110 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	text-align: center;
+	background-image: url('images/background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	top: 60px;
+}
+
+h1 {
+	font-family: 'Playfair Display', serif;
+	font-size: 40px;
+	color: #234F1E;
+}
+
+h4 {
+	font-family: 'Open Sans', sans-serif;
+	color: #234F1E;
+}
+
+.overlay-text {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	justify-content: center;
+	align-items: center;
+	z-index: 100;
+	font-family: 'Playfair Display', serif;
+	color: #234F1E;
+}
+
+.overlay-text.visible {
+	display: flex;
+	flex-direction: column;
+	animation: overlay-grow 500ms forwards;
+}
+
+.overlay-text-small {
+	font-size: 0.3em;
+}
+
+@keyframes overlay-grow {
+	from {
+		background-color: rgba(255,255,255,0);
+		font-size: 0;
+	}
+
+	to {
+		background-color: rgba(255,255,255,0.8);
+		font-size: 6em;
+	}
+}
+
+.game-container {
+	display: grid;
+	grid-template-columns: repeat(4, auto);
+	grid-gap: 15px;
+	justify-content: center;
+}
+
+.game-info-container {
+	display: flex;
+	margin-bottom: 20px;
+	grid-column: 1 / -1;
+	justify-content: space-between;
+}
+
+.game-info{
+	font-size: 18px;
+	font-family: 'Work Sans', sans-serif;
+	color: #234F1E;
+	font-style: italic;
+}
+
+.card {
+	opacity: 0.6;
+	height: 165px;
+	width: 140px;
+	border-radius: 5px;
+}
+
+#restart {
+	margin-top: 50px;
+	background-color: #234F1E;
+	color: white;
+	font-size: 14px;
+	font-family: 'Work Sans', sans-serif;
+	opacity: 0.8;
+	padding: 10px 15px;
+	border-radius: 3px;
+}
+
+footer {
+	font-size: 10px;
+	margin: 50px auto;
+	width: 50%;
+	color: #234F1E;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}

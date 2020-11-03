@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>A Day At The Park</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Playfair+Display:wght@500&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+
+        <h1>A Day At The Park</h1>
+        <h4>A MEMORY GAME</h4>
+
+        <div class = 'overlay-text visible'>
+            Click to Start
+        </div>
+
+        <div  id = 'game-over-text' class = 'overlay-text'>
+            GAME OVER
+            <span class = 'overlay-text-small'>Click to Restart</span>
+        </div>
+
+        <div id = 'victory-text' class = 'overlay-text'>
+            YOU DID IT
+            <span class = 'overlay-text-small'>Click to Restart</span>
+        </div>
+
+        <div class = "game-container" >
+
+            <div class = "game-info-container">
+
+                <div class = "game-info">
+
+                    TIME <span id = "time">50</span>
+
+                </div>
+
+                <div class = "game-info">
+
+                    MOVES <span id = "moves">0</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <button id = 'restart'><span>START AFRESH</span></button>
+
+
+        <script src = "script.js"></script>
+
+    </body>
+
+    <footer>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </footer>
+
+</html>
